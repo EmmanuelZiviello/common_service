@@ -118,9 +118,9 @@ def create_app():
      #   return {'message': error.args}, 403
     
     #FAQ resources
-    paziente_ns.add_resource(QA,'faq')
-    nutrizionista_ns.add_resource(QA,'faq')
-    admin_ns.add_resource(QA,'faq')
+    paziente_ns.add_resource(QA,'/faq')
+    nutrizionista_ns.add_resource(QA,'/faq')
+    admin_ns.add_resource(QA,'/faq')
 
     #common resources here
     common_ns.add_resource(AccessTokenRefresher, '/refresh')
